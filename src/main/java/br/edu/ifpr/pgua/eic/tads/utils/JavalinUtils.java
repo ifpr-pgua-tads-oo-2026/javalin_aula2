@@ -19,7 +19,7 @@ public class JavalinUtils {
 
         Javalin app = Javalin.create(config->{
             ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
-            templateResolver.setPrefix("/public/"); 
+            templateResolver.setPrefix("/templates/"); 
             templateResolver.setSuffix(".html");       
             templateResolver.setTemplateMode("HTML");
             templateResolver.setCharacterEncoding("UTF-8");
